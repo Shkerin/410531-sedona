@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Шкерин](https://up.htmlacademy.ru/adaptive/12/user/410531).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Сачев](https://up.htmlacademy.ru/adaptive/12/user/11939).
 
 ---
 
