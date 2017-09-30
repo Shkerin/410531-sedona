@@ -1,10 +1,56 @@
 @import "../variables";
 
-.reason__item--background,
-.button {
-  background-color: $primary-background-color;
-}
+.reason {
+  font-size: 14px;
+  line-height: 21px;
 
-.reason__attractions-list {
-  background-color: #ffffff;
+  .reason__header {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  .reason__header-description {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .reason__item--priority {
+    background-color: $primary-background-color;
+  }
+
+  .reason__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+  }
+
+  .reason__number,
+  .reason__description {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .reason__title--priority,
+  .reason__number--priority,
+  .reason__description--priority {
+    color: #ffffff;
+  }
+
+  .reason__attractions-list {
+    background-color: #ffffff;
+  }
+
+  .reason__attractions-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  .reason__attractions-descriptions {
+    font-size: inherit;
+    line-height: inherit;
+  }
 }

@@ -1,0 +1,32 @@
+@import "../variables";
+
+.multimedia {
+  font-size: 14px;
+  line-height: 24px;
+
+  .multimedia__header {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  .multimedia__header-description {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .multimedia__title,
+  .multimedia__number-like {
+    font-size: inherit;
+    font-weight: bold;
+    line-height: inherit;
+    color: #000000;
+  }
+
+  .multimedia__author {
+    font-size: inherit;
+    line-height: inherit;
+    text-transform: none;
+  }
+}

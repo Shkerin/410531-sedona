@@ -1,0 +1,10 @@
+@import "../variables";
+
+.site-list__item {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #ffffff;
+
+  background-color: $primary-background-color;
+}
