@@ -1,6 +1,8 @@
 @import "../variables";
 
 .page-main {
+  min-width: 320px;
+
   background: url("../../img/bg-back-mobile@1x.jpg") no-repeat;
 
   .page-main__title {
