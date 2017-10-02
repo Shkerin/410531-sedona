@@ -1,18 +1,11 @@
-@import "../variables";
+.review__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
 
-.review {
+.review__header-description {
   font-size: 14px;
   line-height: 24px;
-
-  .review__header {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 26px;
-    color: #000000;
-  }
-
-  .review__header-description {
-    font-size: inherit;
-    line-height: inherit;
-  }
 }

@@ -1,40 +1,27 @@
-@import "../variables";
-
-.form {
+.form__legend {
   font-size: 18px;
   line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
 
-  .form__legend {
-    font-size: inherit;
-    font-weight: bold;
-    line-height: inherit;
-    color: #000000;
-  }
+.form__list {
+  @include no-list;
+}
 
-  .form__list {
-    margin: 0;
-    padding: 0;
-  }
+.form__label,
+.form__label-radio,
+.form__label-checkbox {
+  font-size: 14px;
+  line-height: 26px;
+}
 
-  .form__label,
-  .form__label-radio,
-  .form__label-checkbox {
-    font-size: 14px;
-    line-height: 26px;
-  }
-
-  .form__label-radio,
-  .form__label-checkbox {
-    text-transform: none;
-  }
-
-  .form__field,
-  .form__field-radio,
-  .form__field-checkbox {
-    font-size: inherit;
-    font-weight: bold;
-    line-height: inherit;
-    text-transform: none;
-    color: #000000;
-  }
+.form__field,
+.form__label-radio,
+.form__label-checkbox {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  color: #000000;
 }

@@ -1,18 +1,11 @@
-@import "../variables";
+.video-presentation__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
 
-.video-presentation {
+.video-presentation__header-description {
   font-size: 14px;
   line-height: 24px;
-
-  .video-presentation__header {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 26px;
-    color: #000000;
-  }
-
-  .video-presentation__header-description {
-    font-size: inherit;
-    line-height: inherit;
-  }
 }
