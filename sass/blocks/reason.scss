@@ -1,0 +1,58 @@
+.reason__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.reason__header-description {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.reason__list {
+  @include no-list;
+}
+
+.reason__item--priority {
+  background-color: $primary-background-color;
+}
+
+.reason__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.reason__number,
+.reason__description {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.reason__title--priority,
+.reason__number--priority,
+.reason__description--priority {
+  /*
+  Убрать лишние модификаторы
+  */
+  color: #ffffff;
+}
+
+.reason__attractions-list {
+  @include no-list;
+
+  background-color: #ffffff;
+}
+
+.reason__attractions-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.reason__attractions-descriptions {
+  font-size: 14px;
+  line-height: 21px;
+}

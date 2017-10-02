@@ -1,0 +1,27 @@
+.form__legend {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.form__list {
+  @include no-list;
+}
+
+.form__label,
+.form__label-radio,
+.form__label-checkbox {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.form__field,
+.form__label-radio,
+.form__label-checkbox {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  color: #000000;
+}
