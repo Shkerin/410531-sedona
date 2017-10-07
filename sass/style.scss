@@ -1,18 +1,119 @@
-@import "variables";
-@import "mixins";
-@import "scaffolding";
-@import "blocks/page-header";
-@import "blocks/main-nav";
-@import "blocks/site-list";
-@import "blocks/page-main";
-@import "blocks/reason";
-@import "blocks/search-hotels";
-@import "blocks/button";
-@import "blocks/multimedia";
-@import "blocks/video-presentation";
-@import "blocks/review";
-@import "blocks/form";
-@import "blocks/page-footer";
-@import "blocks/contacts";
-@import "blocks/social";
-@import "blocks/copyright";
+/* variables.scss */
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+}
+
+$primary-font: "PT Sans", "Arial", sans-serif;
+$primary-color: #333333;
+$primary-background-color: #81b3d2;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+/* scaffolding.scss */
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: $primary-font;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+[class*="--hidden"]:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* mixins.scss */
+
+@mixin no-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+/* outlines.scss */
+
+body {
+  background: url("../img/bb-mobile.jpg") no-repeat 50% 0;
+  background-size: 320px auto;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background: url("../img/bb-tablet.jpg") no-repeat 50% 0;
+    background-size: 768px auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background: url("../img/bb-desktop.jpg") no-repeat 50% 0;
+    background-size: 1280px auto;
+  }
+}
+
+.main-nav {
+  /* Временно для сеток */
+  min-height: 223px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    /* Временно для сеток */
+    min-height: 56px;
+  }
+}
+
+/* page-header.scss */
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  min-height: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    display: none;
+  }
+}
