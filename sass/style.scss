@@ -1,4 +1,4 @@
-/* variables.scss */
+/* ------------ variables.scss ------------ */
 
 @font-face {
   font-family: "PT Sans";
@@ -20,7 +20,7 @@ $primary-background-color: #81b3d2;
 $tablet-width: 768px;
 $desktop-width: 1280px;
 
-/* scaffolding.scss */
+/* ------------ scaffolding.scss ------------ */
 
 body {
   min-width: 320px;
@@ -52,7 +52,7 @@ a {
   overflow: hidden;
 }
 
-/* mixins.scss */
+/* ------------ mixins.scss ------------ */
 
 @mixin no-list {
   margin: 0;
@@ -69,11 +69,12 @@ a {
   }
 }
 
-/* outlines.scss */
+/* ------------ outlines.scss ------------ */
 
 body {
   background: url("../img/bb-mobile.jpg") no-repeat 50% 0;
   background-size: 320px auto;
+  min-height: 3610px;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,30 +91,70 @@ body {
   }
 }
 
-.main-nav {
-  /* Временно для сеток */
-  min-height: 223px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav {
-    /* Временно для сеток */
-    min-height: 56px;
-  }
-}
-
-/* page-header.scss */
+/* ------------ page-header.scss ------------ */
 .page-header {
   display: flex;
   flex-direction: column;
 }
 
 .page-header__logo {
-  min-height: 56px;
+  width: 320px;
+  height: 56px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
     display: none;
+  }
+}
+
+.page-header,
+.page-header__logo {
+  //@include no-outline;
+}
+
+.page-header__logo {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ------------ blocks/main-nav.scss ------------ */
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list {
+  min-height: 223px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .site-list {
+    min-height: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 1200px;
   }
 }
