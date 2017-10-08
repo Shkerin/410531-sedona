@@ -109,15 +109,6 @@ body {
   }
 }
 
-.page-header,
-.page-header__logo {
-  //@include no-outline;
-}
-
-.page-header__logo {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 /* ------------ blocks/main-nav.scss ------------ */
 .main-nav {
   width: 320px;
@@ -131,30 +122,288 @@ body {
   list-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
+}
+
+/* ------------ blocks/site-list.scss ------------ */
 .site-list {
   min-height: 223px;
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    width: auto;
-    margin: 0;
-  }
-
-  .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 768px;
-    margin: 0 auto;
-  }
-
   .site-list {
     min-height: 56px;
   }
 }
 
+/* ------------ blocks/page-main.scss ------------ */
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__title {
+  width: 320px;
+  margin: 0 auto;
+
+  /* temp */
+  min-height: 389px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    width: 768px;
+
+    /* temp */
+    min-height: 518px;
+  }
+}
+
 @media (min-width: $desktop-width) {
-  .main-nav__wrapper {
+  .page-main__title {
     width: 1200px;
+  }
+}
+
+/* ------------ blocks/reason.scss ------------ */
+.reason {
+  width: 320px;
+  margin: 0 auto;
+}
+
+/* height: header + description = 221px */
+.reason__header {
+  margin: 0;
+
+  /* temp */
+  min-height: 120px;
+}
+
+.reason__header-description {
+  margin: 0;
+
+  /* temp */
+  min-height: 101px;
+}
+
+.reason__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reason {
+    width: 768px;
+  }
+
+  /* height: header + description = 206px */
+  .reason__header {
+    min-height: 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason {
+    width: 1200px;
+  }
+}
+
+/* ------------ blocks/advantages-list.scss ------------ */
+.advantage-list__wrapper-top {
+  display: flex;
+  flex-direction: column;
+
+  /*temp*/
+  min-height: 1338px;
+}
+
+.advantage-list__wrapper-bottom {
+  display: flex;
+  flex-direction: column;
+
+  /* temp */
+  min-height: 503px;
+}
+
+.advantage-list__item {
+  /* temp */
+  min-height: 168px;
+}
+
+.advantage-list__item--priority {
+  /* temp */
+  min-height: 451px;
+}
+
+.advantage-list__item:first-child .advantage-list__group {
+  /* temp */
+  min-height: 211px;
+}
+
+.advantage-list__group {
+  /* temp */
+  min-height: 191px;
+}
+
+.advantage-list__image {
+  /* temp */
+  min-height: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-list__wrapper-top {
+    /*temp*/
+    min-height: 842px;
+  }
+
+  .advantage-list__wrapper-bottom {
+    display: flex;
+    flex-direction: row;
+
+    /*temp*/
+    min-height: 256px;
+  }
+
+  .advantage-list__item {
+    /* temp */
+    min-width: 256px;
+  }
+
+  .advantage-list__item--priority {
+    /* temp */
+    min-height: 256px;
+  }
+
+  .advantage-list__item:first-child .advantage-list__inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advantage-list__inner {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .advantage-list__group {
+    /* temp */
+    min-width: 256px;
+  }
+
+  .advantage-list__image {
+    /* temp */
+    min-width: 512px;
+    min-height: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-list__item {
+    /* temp */
+    min-width: 400px;
+  }
+
+  .advantage-list__group {
+    /* temp */
+    min-width: 400px;
+  }
+
+  .advantage-list__image {
+    /* temp */
+    min-width: 800px;
+  }
+}
+
+/* ------------ blocks/attraction-list.scss ------------ */
+.attraction-list {
+  display: flex;
+  flex-direction: column;
+
+  /* temp */
+  min-height: 416px;
+}
+
+.attraction-list-item {
+  /* temp */
+  min-height: 138px;
+}
+
+@media (min-width: $tablet-width) {
+  .attraction-list {
+    display: flex;
+    flex-direction: row;
+
+    /* temp */
+    min-height: 256px;
+  }
+
+  .attraction-list-item {
+    /* temp */
+    min-width: 256px;
+    min-height: 330px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attraction-list-item {
+    /* temp */
+    min-width: 400px;
+  }
+}
+
+/* ------------ blocks/search-hotels.scss ------------ */
+.search-hotels {
+  width: 320px;
+  margin: 0 auto;
+
+  /*temp*/
+  min-height: 637px;
+}
+
+.search-hotels__group {
+  /* temp */
+  min-height: 288px;
+}
+
+.search-hotels__map {
+  /* temp */
+  min-height: 350px;
+}
+
+@media (min-width: $tablet-width) {
+  .search-hotels {
+    width: 768px;
+
+    /*temp*/
+    min-height: 668px;
+  }
+
+  .search-hotels__group {
+    /* temp */
+    min-height: 318px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search-hotels {
+    width: 1200px;
+
+    /*temp*/
+    min-height: 681px;
+  }
+
+  .search-hotels__group {
+    /* temp */
+    min-height: 331px;
   }
 }
