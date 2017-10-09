@@ -1,58 +1,51 @@
+.reason {
+  width: 320px;
+  margin: 0 auto;
+}
+
+/* height: header + description = 221px */
 .reason__header {
+  margin: 0;
+
+  /* temp */
+  min-height: 120px;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
 }
 
+@media (min-width: $tablet-width) {
+  .reason {
+    width: 768px;
+  }
+
+  /* height: header + description = 206px */
+  .reason__header {
+    min-height: 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason {
+    width: 1200px;
+  }
+}
+
 .reason__header-description {
+  margin: 0;
+
+  /* temp */
+  min-height: 101px;
+
   font-size: 14px;
   line-height: 26px;
 }
 
 .reason__list {
+  margin: 0;
+  padding: 0;
+
   @include no-list;
-}
-
-.reason__item--priority {
-  background-color: $primary-background-color;
-}
-
-.reason__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-}
-
-.reason__number,
-.reason__description {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.reason__title--priority,
-.reason__number--priority,
-.reason__description--priority {
-  /*
-  Убрать лишние модификаторы
-  */
-  color: #ffffff;
-}
-
-.reason__attractions-list {
-  @include no-list;
-
-  background-color: #ffffff;
-}
-
-.reason__attractions-title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #000000;
-}
-
-.reason__attractions-descriptions {
-  font-size: 14px;
-  line-height: 21px;
 }

@@ -1,4 +1,21 @@
+.social {
+  width: 320px;
+  margin: 0 auto;
+
+  /* tmp */
+  min-height: 48px;
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: 400px;
+  }
+}
+
 .social__list {
+  margin: 0;
+  padding: 0;
+
   @include no-list;
 }
 
