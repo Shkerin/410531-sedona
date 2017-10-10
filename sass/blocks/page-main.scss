@@ -4,11 +4,11 @@
 }
 
 .page-main__title {
-  min-width: 320px;
+  min-width: $mobile-width;
   margin: 0 auto;
 
   /* temp */
-  min-height: 389px;
+  min-height: 158px; /* 389px; */
 
   /* TODO Заменить заголовок на изображение */
   font-size: 70px;
@@ -20,15 +20,18 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    width: 768px;
+    width: $tablet-width;
 
     /* temp */
-    min-height: 518px;
+    min-height: 290px; /* 518px; */
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    width: 1200px;
+    width: $desktop-width;
+
+    /* tmp */
+    min-height: 301px;
   }
 }
