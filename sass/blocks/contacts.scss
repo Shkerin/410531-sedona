@@ -1,22 +1,20 @@
-.contacts {
+.contact {
   width: $mobile-width;
   margin: 0 auto;
 
   /* tmp */
   min-height: 98px;
-}
 
-@media (min-width: $desktop-width) {
-  .contacts {
-    width: 400px;
-    /* tmp */
-    min-height: 120px;
-  }
-}
-
-.contacts__text {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+}
+
+@media (min-width: $desktop-width) {
+  .contact {
+    width: 400px;
+    /* tmp */
+    min-height: 120px;
+  }
 }
