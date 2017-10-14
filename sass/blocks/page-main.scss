@@ -1,15 +1,37 @@
 .page-main {
-  min-width: 320px;
-
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-main__title {
-  /*
-  Заменить заголовок на изображение
-   */
+  min-width: $mobile-width;
+  margin: 0 auto;
+
+  /* temp */
+  min-height: 158px; /* 389px; */
+
+  /* TODO Заменить заголовок на изображение */
   font-size: 70px;
   line-height: 10px;
   font-weight: bold;
   color: #ffffff;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    width: $tablet-width;
+
+    /* temp */
+    min-height: 290px; /* 518px; */
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    width: $desktop-width;
+
+    /* tmp */
+    min-height: 301px;
+  }
 }

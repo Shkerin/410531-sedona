@@ -1,5 +1,19 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 223px;
+
   @include no-list;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    justify-content: space-around;
+
+    min-height: 56px;
+  }
 }
 
 .site-list__item {

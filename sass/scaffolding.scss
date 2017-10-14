@@ -1,10 +1,11 @@
 body {
+  min-width: $mobile-width;
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: $primary-font;
   text-transform: uppercase;
-  color: #333333;
+  color: $primary-color;
 }
 
 a {
