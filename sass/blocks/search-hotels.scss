@@ -1,17 +1,18 @@
 .search-hotels {
   width: $mobile-width;
   margin: 0 auto;
-
-  /*temp*/
-  min-height: 637px;
+  text-align: center;
 }
 
 .search-hotels__group {
-  /* temp */
-  min-height: 288px;
+  padding-top: 27px;
+  min-height: 258px;
 }
 
 .search-hotels__header {
+  margin: 0;
+  padding-bottom: 19px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -19,8 +20,15 @@
 }
 
 .search-hotels__header-description {
+  margin: 0;
+  padding-bottom: 34px;
+
   font-size: 14px;
   line-height: 24px;
+}
+
+.search-hotels__button {
+  padding: 16px 44px;
 }
 
 @media (min-width: $tablet-width) {

@@ -3,19 +3,18 @@
   flex-direction: column;
 }
 
-.page-main__title {
-  min-width: $mobile-width;
+.page-main__wrapper-title {
+  width: $mobile-width;
+  min-height: 390px;
   margin: 0 auto;
 
-  /* temp */
-  min-height: 158px; /* 389px; */
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
 
-  /* TODO Заменить заголовок на изображение */
-  font-size: 70px;
-  line-height: 10px;
-  font-weight: bold;
-  color: #ffffff;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 22px;
+  }
 }
 
 @media (min-width: $tablet-width) {

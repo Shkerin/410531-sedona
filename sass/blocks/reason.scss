@@ -5,15 +5,32 @@
 
 /* height: header + description = 221px */
 .reason__header {
+  min-height: 80px;
   margin: 0;
-
-  /* temp */
-  min-height: 120px;
+  padding-top: 40px;
 
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
   color: #000000;
+}
+
+.reason__header-description {
+  min-height: 78px;
+  margin: 0;
+  padding-top: 25px;
+
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.reason__list {
+  margin: 0;
+  padding: 0;
+
+  @include no-list;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,21 +48,4 @@
   .reason {
     width: $desktop-width;
   }
-}
-
-.reason__header-description {
-  margin: 0;
-
-  /* temp */
-  min-height: 101px;
-
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.reason__list {
-  margin: 0;
-  padding: 0;
-
-  @include no-list;
 }
