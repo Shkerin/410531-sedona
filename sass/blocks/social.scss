@@ -1,15 +1,23 @@
-.social {
-  width: $mobile-width;
-  margin: 0 auto;
+.social__item {
+  display: inline-block;
 
-  /* tmp */
-  min-height: 48px;
+  vertical-align: top;
 }
 
-@media (min-width: $desktop-width) {
-  .social {
-    width: 400px;
-  }
+.social__link {
+  display: block;
+  width: 19px;
+  height: 20px;
+  margin-right: 1px;
+  padding: 14px 14px;
+
+  background-color: $primary-background-color;
+  color: #ffffff;
+}
+
+.social__item:first-child .social__link svg,
+.social__item:last-child .social__link svg {
+  margin-top: 3px;
 }
 
 .social__list {
@@ -20,13 +28,19 @@
 }
 
 .social__link--twitter {
-  background: url("../img/icon-twitter.svg") center no-repeat $primary-background-color;
+  //background: url("../img/icon-twitter.svg") center no-repeat $primary-background-color;
 }
 
 .social__link--facebook {
-  background: url("../img/icon-facebook.svg") center no-repeat $primary-background-color;
+  //background: url("../img/icon-facebook.svg") center no-repeat $primary-background-color;
 }
 
 .social__link--youtube {
-  background: url("../img/icon-youtube.svg") center no-repeat $primary-background-color;
+  //background: url("../img/icon-youtube.svg") center no-repeat $primary-background-color;
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: 400px;
+  }
 }

@@ -1,9 +1,8 @@
 .copyright {
   width: $mobile-width;
+  height: 34px;
   margin: 0 auto;
-
-  /* tmp */
-  min-height: 97px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $desktop-width) {

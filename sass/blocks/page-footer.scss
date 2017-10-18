@@ -4,6 +4,13 @@
 
   width: $mobile-width;
   margin: 0 auto;
+  padding-top: 33px;
+
+  text-align: center;
+}
+
+.page-footer__social {
+  padding-bottom: 27px;
 }
 
 @media (min-width: $tablet-width) {
