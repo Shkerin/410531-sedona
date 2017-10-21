@@ -18,11 +18,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main__title {
+  .page-main__wrapper-title {
     width: $tablet-width;
 
     /* temp */
-    min-height: 290px; /* 518px; */
+    min-height: 520px;
   }
 }
 

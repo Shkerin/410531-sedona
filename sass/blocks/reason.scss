@@ -3,11 +3,10 @@
   margin: 0 auto;
 }
 
-/* height: header + description = 221px */
 .reason__header {
-  min-height: 80px;
   margin: 0;
   padding-top: 40px;
+  padding-bottom: 27px;
 
   font-size: 18px;
   line-height: 26px;
@@ -17,9 +16,8 @@
 }
 
 .reason__header-description {
-  min-height: 78px;
   margin: 0;
-  padding-top: 25px;
+  padding-bottom: 26px;
 
   font-size: 14px;
   line-height: 26px;
@@ -38,9 +36,17 @@
     width: $tablet-width;
   }
 
-  /* height: header + description = 206px */
   .reason__header {
-    min-height: 105px;
+    margin: 0 auto;
+    padding-top: 51px;
+    width: 600px;
+
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+
+  .reason__header-description {
+    padding-bottom: 50px;
   }
 }
 

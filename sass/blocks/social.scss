@@ -13,6 +13,7 @@
 
   background-color: $primary-background-color;
   color: #ffffff;
+  text-align: center;
 }
 
 .social__item:first-child .social__link svg,
@@ -39,8 +40,15 @@
   //background: url("../img/icon-youtube.svg") center no-repeat $primary-background-color;
 }
 
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .social {
-    width: 400px;
+    padding: 0;
+    //width: 400px;
   }
 }

@@ -1,18 +1,20 @@
 .copyright {
-  width: $mobile-width;
+  display: flex;
+  justify-content: center;
   height: 34px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+}
+
+.copyright__text {
+  margin-right: 10px;
+  padding-top: 3px;
+
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
 }
 
 @media (min-width: $desktop-width) {
   .copyright {
     width: 400px;
   }
-}
-
-.copyright__text {
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
 }

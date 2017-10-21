@@ -55,77 +55,85 @@
 .advantage-list__wrapper-bottom {
   display: flex;
   flex-direction: column;
-}
-
-.advantage-list__wrapper-bottom .advantage-list__item {
-  position: relative;
-
-  min-height: 141px;
-  padding-top: 27px;
+  justify-content: space-around;
+  align-items: center;
 
   background-color: #eeeeee;
-}
 
-.advantage-list__wrapper-bottom .advantage-list__item::before {
-  content: "";
+  .advantage-list__item {
+    position: relative;
 
-  position: absolute;
-  bottom: 0;
-  left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 141px;
+  }
 
-  width: 280px;
-  height: 1px;
+  .advantage-list__item::before {
+    content: "";
 
-  background-color: #d6d6d6;
-}
+    position: absolute;
+    bottom: 0;
+    left: 20px;
 
-.advantage-list__wrapper-bottom .advantage-list__item:last-child::before {
-  display: none;
+    width: 280px;
+    height: 1px;
+
+    background-color: #d6d6d6;
+  }
+
+  .advantage-list__item:last-child::before {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .advantage-list__wrapper-top {
-    /*temp*/
-    min-height: 842px;
+  .advantage-list__inner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .advantage-list__item--priority:first-child {
+    .advantage-list__inner {
+      flex-direction: row;
+    }
+  }
+
+  .advantage-list__group {
+    flex-grow: 1;
+    flex-basis: 100px;
+    padding: 0;
+  }
+
+  .advantage-list__title {
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+
+  .advantage-list__number {
+    padding-bottom: 21px;
+  }
+
+  .advantage-list__image {
+    flex-grow: 3;
+    flex-basis: 300px;
+    height: 256px;
   }
 
   .advantage-list__wrapper-bottom {
     display: flex;
     flex-direction: row;
+    height: 256px;
 
-    /*temp*/
-    min-height: 256px;
-  }
+    .advantage-list__item {
+      flex-basis: 158px;
+    }
 
-  .advantage-list__item {
-    /* temp */
-    min-width: 256px;
-  }
-
-  .advantage-list__item--priority {
-    /* temp */
-    min-height: 256px;
-  }
-
-  .advantage-list__item:first-child .advantage-list__inner {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .advantage-list__inner {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .advantage-list__group {
-    /* temp */
-    min-width: 256px;
-  }
-
-  .advantage-list__image {
-    /* temp */
-    min-width: 512px;
-    min-height: 256px;
+    .advantage-list__item::before {
+      display: none;
+    }
   }
 }
 
