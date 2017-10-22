@@ -1,9 +1,5 @@
 .contact {
-  width: $mobile-width;
-  margin: 0 auto;
-
-  /* tmp */
-  min-height: 98px;
+  padding-bottom: 35px;
 
   font-size: 21px;
   line-height: 26px;
@@ -11,10 +7,14 @@
   color: #000000;
 }
 
+@media (min-width: $tablet-width) {
+  .contact {
+    padding: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .contact {
-    width: 400px;
-    /* tmp */
-    min-height: 120px;
+    padding: 0;
   }
 }
