@@ -14,6 +14,7 @@
   position: absolute;
   top: 0;
   left: 110px;
+  z-index: 10;
 
   min-height: 56px;
 }
@@ -45,7 +46,7 @@
 
     background-color: $primary-background-color;
     box-shadow: 0 8px 0 0 $primary-background-color,
-    0 16px 0 0 $primary-background-color;
+      0 16px 0 0 $primary-background-color;
   }
 }
 
@@ -85,6 +86,6 @@
   }
 
   .page-header__logo {
-    left: 584px;
+    left: 549px;
   }
 }
